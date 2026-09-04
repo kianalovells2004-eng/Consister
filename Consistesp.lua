@@ -4,20 +4,7 @@
 --      >  `-.__.-'          `'.__
 --     /_.-'-._         _,   ^ ---)
 --             `'------/_.'----```
---                     
-
-
-
-
-
-
-
-
-
-
-
-
-
+--                    
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
