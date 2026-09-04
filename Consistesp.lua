@@ -1,3 +1,23 @@
+
+--                ;'-. 
+--     ;-._        )  '---.._
+--      >  `-.__.-'          `'.__
+--     /_.-'-._         _,   ^ ---)
+--             `'------/_.'----```
+--                     
+
+
+
+
+
+
+
+
+
+
+
+
+
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
@@ -13,13 +33,13 @@ local ESP = {
     NameEnabled = false,
     ThreeDBoxEnabled = false,
     TracerLocalEnabled = false,
-    TracerMouseEnabled = false,
+    TracerMouseEnabled = false,             
     TracerTopEnabled = false,
     TracerBottomEnabled = false,
     Drawings = {}
 }
 
--- Helper to create a new drawing object
+
 local function newDrawing(type, properties)
     local drawing = Drawing.new(type)
     for prop, value in pairs(properties or {}) do
@@ -29,7 +49,6 @@ local function newDrawing(type, properties)
     return drawing
 end
 
--- Create all drawing objects for a player
 local function createDrawings(player)
     local drawings = {
         Box = newDrawing("Square", {
